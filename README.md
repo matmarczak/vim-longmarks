@@ -2,6 +2,8 @@
 
 Vim plugin which emulates marks for multikey mappings.
 
+[![Build Status](https://travis-ci.org/matmarczak/vim-longmarks.svg?branch=master)](https://travis-ci.org/matmarczak/vim-longmarks)
+
 ## Overview
 
 Please note that you have to define your own mappings in order
