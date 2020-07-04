@@ -1,0 +1,5 @@
+language: minimal
+script:
+  - docker run --rm -v "${PWD}:/root" thinca/themis
+  - docker run --rm -v "$(pwd)":/src fnichol/vint vint /src
+
