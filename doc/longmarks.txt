@@ -1,0 +1,66 @@
+*longmarks.txt* mark files with longer key combinations
+
+    __                                       __       ~
+   / /___  ____  ____ _____ ___  ____ ______/ /_______~
+  / / __ \/ __ \/ __ `/ __ `__ \/ __ `/ ___/ //_/ ___/~
+ / / /_/ / / / / /_/ / / / / / / /_/ / /  / ,< (__  ) ~
+/_/\____/_/ /_/\__, /_/ /_/ /_/\__,_/_/  /_/|_/____/  ~
+              /____/                                  ~
+
+====================================================================
+CONTENTS                                         *LongMarksContents*
+
+    1. Introduction ......... |LongMarksIntroduction|
+    2. Usage ................ |LongMarksUsage|
+    3. Configuration ........ |LongMarksConfiguration|
+    4. Mappings ............. |LongMarksMappings|
+    5. License .............. |LongMarksLicense|
+
+====================================================================
+1. Introduction                              *LongMarksIntroduction*
+
+The plugin adds a way to dynamically define marks that are longer than
+one key. It was created to facilitate fast jumps between files
+without the necessity to remember marks unrelated to a filename.
+
+====================================================================
+2. Usage                                            *LongMarksUsage*
+
+The plugin doesn't define any mappings by default instead, it exposes
+two commands:
+
+:LongMarksAddMark                                 *LongMarksAddMark*
+    Adds mark in the current cursor position. User will be asked to
+    press keys to assign a mark to.
+
+:LongMarksGoTo                                       *LongMarksGoTo*
+    Opens buffer which allows user to jump with marks. Press mark
+    combination and jump to file.
+
+If you want to save marks between vim sessions, define global
+variable `g:longmarks_session_path` in your `.vimrc`. For more
+information please refer to |longmarks-session-path| variable.
+
+====================================================================
+3. Configuration                            *LongMarksConfiguration*
+
+--------------------------------------------------------------------
+3.1 g:longmarks_session_path                *longmarks-session-path*
+
+Set session filename. A session is saved in json, but filename
+doesn't have to contain `.json` extension.
+
+====================================================================
+4. Mappings                                 *LongMarksConfiguration*
+
+The plugin doesn't define any mappings by default. Example mappings
+which could be used in the config file are: >
+
+    nnoremap <leader>m :LongMarksAddMark<cr>
+    nnoremap <leader>g :LongMarksGoTo<cr>
+
+====================================================================
+5. License                                        *LongMarksLicense*
+
+The plugin is MIT licensed. For more information refer to `LICENSE`
+file.
