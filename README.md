@@ -4,8 +4,8 @@ Vim plugin which emulates marks for multikey mappings.
 
 ## Overview
 
-Please note that You have to define own mappings in order
-to use plugin.
+Please note that you have to define your own mappings in order
+to use the plugin.
 
 For example:
 
@@ -19,6 +19,6 @@ If you want to save marks between editor sessions
 define additional variable for session file. Session file
 uses `JSON` format. For instance:
 
-`let g:longmarks_session_path=longmarks_session.json`
+`let g:longmarks_session_path='longmarks_session.json'`
 
-For additional informationn please consult (docs)[docs/longmarks.txt].
+For additional informationn please consult [docs](doc/longmarks.txt).
