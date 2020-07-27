@@ -23,4 +23,4 @@ uses `JSON` format. For instance:
 
 `let g:longmarks_session_path='longmarks_session.json'`
 
-For additional informationn please consult [docs](doc/longmarks.txt).
+For additional information please consult [docs](doc/longmarks.txt).
