@@ -30,7 +30,7 @@ The plugin doesn't define any mappings by default instead, it exposes
 two commands:
 
 :LongMarksAddMark                                 *LongMarksAddMark*
-    Adds mark in the current cursor position. User will be asked to
+    Adds mark at the current cursor position. User will be asked to
     press keys to assign a mark to.
 
 :LongMarksGoTo                                       *LongMarksGoTo*
