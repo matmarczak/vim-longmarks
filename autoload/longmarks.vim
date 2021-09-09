@@ -59,6 +59,7 @@ endfunction
 
 function! s:GoToFile(file, position) abort
   execute 'bdelete'
+  execute 'wincmd p'
   execute 'edit ' . a:file
   call setpos('.', a:position)
 endfunction
