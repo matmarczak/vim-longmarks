@@ -24,3 +24,10 @@ uses `JSON` format. For instance:
 `let g:longmarks_session_path='longmarks_session.json'`
 
 For additional information please consult [docs](doc/longmarks.txt).
+
+## Tests
+
+Tests are written using [thinca/vim-themis](https://github.com/thinca/vim-themis)
+and could be run with:
+
+`.vim/path/to/plugin/themis test_longmarks.vim`
